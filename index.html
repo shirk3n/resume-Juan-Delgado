@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<title>Juan Delgado</title>
 	<meta charset="UTF-8">
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+
 </head>
 <body>
 	<header>
@@ -19,36 +21,174 @@
 				<a href="#">Be Watter My Friend</a>
 			</li>
 			<li class="navbar-item">
-				<a href="#quien-soy">Quién soy</a>
+				<a href="#who-am-I">Who am I</a>
 			</li>
 			<li class="navbar-item">
-				<a href="#estudios">Estudios</a>
+				<a href="#studies">Studies</a>
 			</li>
 			<li class="navbar-item">
-				<a href="#experiencia">Experiencia</a>
+				<a href="#experience">Experience</a>
 			</li>
 			<li class="navbar-item">
-				<a href="#sobre-mi">Sobre mi</a>
+				<a href="#about-me">About me</a>
 			</li>
 			<li class="navbar-item">
-				<a href="contact.html">Contacto</a>
+				<a href="contact.html">Contact</a>
 			</li>
 		</ul>	
 	</nav>
-
-	<div>
-		<section id=quien-soy class="section-container">
-			<div id="foto-yo">
-				<img src="images/juan.jpg" alt="Foto de Juan">
+	<div class="container">
+		<section id="who-am-I" class="who clearfix">
+			<div class="title-section">
+				<h1>Who Am I</h1>
+			</div>
+			<div class="photo-me">
+				<img src="images/juan.jpg" alt="Juan's Photo">
+			</div>
+			<div class="person-info">
+				<span>Recent graduate telecommunication engineer. My first experience programming at Malaga’s University
+				was with C and MATLAB, but I also did my own projects using C++. I started programming in JAVA for a
+				subject called “System’s Software engineering”, from that point on I have been practicing with the
+				Android SDK and building simple APPs.
+				I learn quickly and respond very positively to new ideas. I enjoy a challenge and thrive under pressure. I
+				work efficiently with others, but have the confidence in my own ability and my own judgements to be
+				equally happy working on my own.
+				I feel like I am a great match for the job and fit for your organisation.</span>
 			</div>
 		</section>
+		<section id="studies" class="my-studies color-section clearfix">
+			<div class="title-section">
+				<h1>Studies</h1>
+			</div>
+			<div class="container">
+				<article>
+					<div class="row col-4">
+						<header>
+							<h3>Malaga's University</h3>
+							<span>Telecommunication Engineering (Bachelor Degree + Master)
+							Speciality: Communications.</span>
+						</header>
+						<figure class="container-photo">
+							<img src="images/etsit.png" alt="ETSIT logo">
+							<figcaption>
+								<small>Málaga (Spain)</small>
+							</figcaption>
+						</figure>
+						<p>2005-2014</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="row col-4">
+						<header>
+							<h3>Granada's University</h3>
+							<span>Telecommunication Engineering (National Mobility
+							Program).</span>
+						</header>
+						<figure class="container-photo">
+							<img src="images/ugr.png" alt="Granada logo">
+							<figcaption>
+								<small>Granada (Spain)</small>
+							</figcaption>
+						</figure>
+						<p>2010-2011</p>
+					</div>
+				</article>
+
+				<article>
+					<div class="row col-4">
+						<header>
+							<h3>Universität KASSEL</h3>
+							<span>Master Program Electrical Communication Engineering
+							(ECE).</span>
+						</header>
+						<figure class="container-photo">
+							<img src="images/kassel.png" alt="Kassel logo">
+							<figcaption>
+								<small>Kassel (Germany)</small>
+							</figcaption>
+						</figure>
+						<p>2011-2012</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="experience" class="my-experience">
+			<div class="title-section">
+				<h1>Experience</h1>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<header>
+							<h3>Web application development “GAIDO” ()</h3>
+						</header>
+						<small>2014-nowadays</small> <br>
+						<span>
+							Platform designed for Autism Spectrum Disorder (ASD).
+						</span>
+
+						<figure class="container-photo">
+							<img src="images/gaido.png" alt="Kassel logo">
+							<ul>
+								<li><span>Improve their communication, organization and their own personal development.</span></li>
+								<li><span>Lower costs of psychologists’ therapies.</span></li>
+							</ul>
+							<p>Technology used: HTML5, CSS3, JAVASCRIPT, JQUERY, NODEJS, MONGODB (Data Base), MONGOOSE, CORDOVA (for
+							mobile devices-Hybrid).</p>
+				
+							<div>
+								<a href="www.gaido.es">www.gaido.es</a>
+							</div>
+						</figure>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<ul>
+					<li>
+						<header>
+							<h3>Design and development team (display elements, brake light). Universität Kassel.</h3>
+						</header>
+						<small>2011-2012</small> <br>
+						<span>
+							I was a member of the electrical engineering group in “Herkules Racing Team” (people from many
+							countries).
+						</span>
+						<figure class="container-photo">
+							<img src="images/hrt.png" alt="Kassel logo">
+							<ul>
+								<li><span>Better designed than the previous year (small area).</span></li>
+								<li><span>Better position in the international competition.</span></li>
+								<li><span>Decrease assembly costs, around 20%.</span></li>
+								<li><span>Improve performance testing of a printed circuit (steering wheel). Software: Cadsoft Eagle.</span></li>
+							</ul>
+
+
+							<figcaption>
+							
+								<a href="http://www.herkulesracing.de/">www.herkulesracing.de</a>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+		</section>
+	
+		<section id="about-me" class="my-about-me color-section">
+			<div class="title-section">
+				<h1>About me</h1>
+			</div>
+			<div class="container section-container">
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatem, dicta, a possimus quae accusantium, repellat corrupti quasi quas animi, deleniti tempore placeat praesentium! Veniam sequi ex magni placeat ea?</span>
+			</div>
+		</section>
+	
 	</div>
 
-	<section>
-		
-	</section>
-
-	<footer>Juan Delgado</footer>
+	<footer class="footer">Juan Delgado &copy; 2016 kameic</footer>
 
 </body>
 </html>
