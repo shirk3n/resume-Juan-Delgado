@@ -1,0 +1,59 @@
+body{
+	font-family: 'Inconsolata', sans-serif; 
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.title-img {
+	width: 100vw;
+	height: 100vh; /*Coge todo el view port*/
+	background-image: url(../images/beawesome.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#main-title{
+	position: absolute;
+	left: 70%;
+	top: 80%;
+	color: #9B4444;
+	size: 150%;
+
+}
+
+.navbar {
+	position: fixed; /*Lo coloca en posicion relativa del navegador*/
+	width: 100%;
+	top:0px;
+}
+
+.navbar .navbar-list{
+	float: left;
+	margin: 0px;
+
+}
+
+.navbar .navbar-list .navbar-item{
+	display: inline-block;
+	background-color: #9B4444;
+}
+
+.navbar .navbar-list .navbar-item a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#foto-yo{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+}
+
+.section-container{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
