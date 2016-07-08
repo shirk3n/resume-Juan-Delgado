@@ -1,7 +1,15 @@
+*{
+	text-decoration: none;
+}
+
 body{
 	font-family: 'Inconsolata', sans-serif; 
 	margin: 0px;
 	overflow-x: hidden;
+}
+section {
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 
 /*Maquetacion pagina*/
@@ -61,14 +69,16 @@ body{
 	background-color: #B27700;
 }
 
-.section-container {
-	padding-top: 50px;
-	padding-bottom: 50px;
+
+
+.info-center{
+	margin-right: calc(-50vw + 50%);
+    margin-left: calc(-50vw + 50%);
 }
 
 /*----------------------*/
 
-/*About me--------------*/
+/*Who am I--------------*/
 .who{
 	padding: 3%;
 }
@@ -96,10 +106,6 @@ body{
 
 /*My studies*/
 
-.my-studies{
-	
-}
-
 .color-section{
 	background-color: #B27700;
 	margin-right: calc(-50vw + 50%);
@@ -112,17 +118,63 @@ body{
 	border-radius: 50%;
 }
 
+/*My Experience*/
+
+.my-experience ul {
+	padding:0;
+}
 .my-experience .container-photo ul{
 	display: inline-block;
 	padding: 1%;
 	margin-left: 1%;
-	text-align: center;
-	text-decoration: none;
+	
 }
 
-.my-experience .container-photo li{
-	text-decoration: none;
+.my-experience .my-experience-list{
+	list-style:none;
 }
+/*------------------------*/
+
+/*About me*/
+hr{
+    box-sizing: content-box;
+}
+
+
+/*------------------------*/
+
+
+.gaido-plataforma{
+
+	max-width: 50%;
+	padding-top: 2%;
+	margin-left: 20%;
+	
+}
+
+/*FORM*/
+.form {
+	padding: 0 20px;
+}
+
+.form .form-row {
+	padding: 10px;
+}
+
+.box{
+	border: 2px solid;
+    border-radius: 25px;
+}
+/*----------*/
+
+/*Mapa*/
+#googleMap {
+	width: 100vw;
+	height: 400px;
+	margin-top: 2%;
+	margin-bottom: 2%; 
+}
+/*------*/
 
 /*Footer------------------*/
 
