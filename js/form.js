@@ -40,21 +40,21 @@ form.addEventListener("submit", function(evt){
 	};
 
 	if (inputNombre.checkValidity() == false){
-		alert("Escribe tu nombre");
+		alert("Type your name");
 		inputNombre.focus();
 		evt.preventDefault(); //No me envía el formulario si da error
 		return false;
 	}
 	//Con validar uno basta
 	if (conocidosRadioInput.conocido_universidad.checkValidity() == false){
-		alert("Introduce cómo me has conocido");
+		alert("Type where you knew me");
 		evt.preventDefault();
 		return false;
 	}
 	//input dinamico
 	if (document.getElementById('otros')){
 		if (document.getElementById('otros').checkValidity() == false){
-			alert("Escribe cómo me has conocido");
+			alert("Where, How...?");
 			document.getElementById('otros').focus();
 			evt.preventDefault();
 			return false;
@@ -62,26 +62,26 @@ form.addEventListener("submit", function(evt){
 	}
 
 	if (inputEmail.checkValidity() == false){
-		alert('Escribe tu email');
+		alert('Type your email');
 		email.focus();
 		evt.preventDefault();
 		return false;
 	}
 
 	if (inputPhone.checkValidity() == false){
-		alert('Escribe tu teléfono');
+		alert('Type your phone number');
 		inputPhone.focus();
 		evt.preventDefault();
 		return false;
 	}
 
 	if (inputTextArea.checkValidity() == false){
-		alert('Escribe tu comentario');
+		alert('Type whatever you want');
 		inputTextArea.focus();
 		evt.preventDefault();
 		return false;
 	} else if (numberCaracters.length > 150){
-		alert('Demasiadas palabras: Máximo de 150 palabras');
+		alert('To many words: Max. 150 words');
 		inputTextArea.focus();
 		evt.preventDefault();
 		return false;
