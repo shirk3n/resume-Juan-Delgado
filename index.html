@@ -6,6 +6,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<script src="js/jquery-3.0.0.js"></script>
+	 <script src="js/modernizr-custom.js"></script>
+	 <script src="js-webshim/minified/polyfiller.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
 		<script>
 			function initialize() {
@@ -21,7 +24,7 @@
 				  var marker = new google.maps.Marker({
 				    position: myLatLng,
 				    map: map,
-				    title: 'Aqui estamos'
+				    title: 'Here we are'
 				  });
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
@@ -31,7 +34,7 @@
 <body>
 	<header>
 		<div class="title-img">
-			<h1 id="main-title">Resume - Juan Delgado</h1>
+			<h1 class="main-title">Juan Delgado</h1>
 		</div>
 	</header>
 	
@@ -53,7 +56,7 @@
 				<a href="#about-me">About me</a>
 			</li>
 			<li class="navbar-item">
-				<a href="contact.html">Contact</a>
+				<a href="#contact">Contact</a>
 			</li>
 		</ul>	
 	</nav>
@@ -162,7 +165,7 @@
 							mobile devices-Hybrid).</p>
 				
 							<div>
-								<a href="www.gaido.es">www.gaido.es</a>
+								<a href="http://www.gaido.es" target="_blank">www.gaido.es</a>
 							</div>
 						</figure>
 					</li>
@@ -190,7 +193,7 @@
 								<li><span>Improve performance testing of a printed circuit (steering wheel). Software: Cadsoft Eagle.</span></li>
 							</ul>
 							<figcaption>
-								<a href="http://www.herkulesracing.de/">www.herkulesracing.de</a>
+								<a href="http://www.herkulesracing.de/" target="_blank">www.herkulesracing.de</a>
 							</figcaption>
 						</figure>
 					</li>
@@ -208,12 +211,12 @@
 					<ul>
 						<li><strong>Guitar: </strong>9 years at the “Royal Conservatory of Almería” Spain</li>
 						<li><strong>Private TUtor: </strong>Primary and high school students (Private Academy).
-Classical guitar.</li>
+						Classical guitar.</li>
 						<li><strong>Football: </strong>10 years in “Pavía Club de Futbol“ I was the captain for 5 years (Almería, Spain)
-1 year in “Club de Futbol 971 Español de Kassel“ (Kassel, Germany)</li>
+						1 year in “Club de Futbol 971 Español de Kassel“ (Kassel, Germany)</li>
 						<li><strong>Vespa: </strong>Organiser and participant in social event with Vespa Club.
 						</li>
-						<li>Co-Founder GAIDO
+						<li>Co-Founder GAIDO. You can watch the next video for more information:
 							<div class="gaido-plataforma">
 						<video id="video-gaido-plataforma" width="550" height="300" controls>
 							<source src="videos/gaido_plataforma.mp4" type="video/mp4">
@@ -226,7 +229,7 @@ Classical guitar.</li>
 			</div>
 		</section>
 
-<!-- FORM -->
+<!-- Contact -->
 		<div class="container clearfix">
 			<section id="contact">
 				<div class="title-section">
@@ -234,21 +237,53 @@ Classical guitar.</li>
 				</div>
 				<hr>
 				<div>
-					<div class="col-6 box">
-						<span>
-							Juan Delgado Pérez. <br> C/ Magistral Dominguez, 23 04003 <br> Almería
-						</span>
+					<div class="col-6 ">
+						<p class="big-format">
+							Juan Delgado Pérez <br> 
+							Telecommunication Engineer <br>
+							<b>Phone:</b> 656937343 <br><br>
+							@shirk3n<br>
+						 	<br> Available World Wide
+						</p>
 					</div>
-					<div class="col-6 box">
+<!-- Form -->
+					<div class="col-6">
 						<form id="form-contact" class="form" name="contact-me" method="get" novalidate>
 							<div class="form-row">
-								<label for="nombre">Nombre:</label>
-								<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+								<label for="nombre">Name:</label>
+								<input type="text" id="nombre" name="nombre" placeholder="Name" required>
 							</div>
 
 							<div class="form-row">
 								<label>Email:</label>
 								<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+							</div>
+
+							<div class="form-row">
+								<span>Do you know me?</span><br>
+								<label for="conocido_universidad">Univeristy</label>
+								<input type="radio" id="conocido_universidad" name="como-conocido" value="universidad" required>
+								<label for="conocido_master">Master</label>
+								<input type="radio" id="conocido_master" name="como-conocido" value="master" required>
+								<label for="conocido_futbol">Futbol Team</label>
+								<input type="radio" id="conocido_futbol" name="como-conocido" value="futbol" required>
+								<label for="conocido_juerga">Party time</label>
+								<input type="radio" id="conocido_juerga" name="como-conocido" value="juerga" required>
+								<label for="conocido_otros">Others</label>
+								<input type="radio" id="conocido_otros" name="como-conocido" value="otros" required>
+							</div>
+							<div class="form-row">
+								<span>Phone: </span>
+								<input type="tel" id="telephone" name="phone" pattern="[0-9]{9}" placeholder="Your phone number" required>
+							</div>
+
+							<div>
+								<textarea name="textarea" id="message" cols="75" rows="7" placeholder="What do you want?" required></textarea>
+							</div>
+							
+
+							<div class="form-row">
+								<button type="submit" id="enviar">Send </button>
 							</div>
 						</form>
 					</div>
@@ -266,4 +301,6 @@ Classical guitar.</li>
 	</footer>
 
 </body>
+	<script src="js/menu.js"></script>
+	<script src="js/form.js"></script>
 </html>

@@ -20,12 +20,12 @@ section {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
-#main-title{
+.main-title{
 	position: absolute;
-	left: 70%;
+	left: 60%;
 	top: 80%;
 	color: #9B4444;
-	size: 150%;
+	animation : mainTitle 2s forwards;
 
 }
 /*Para el posicionamiento*/
@@ -46,6 +46,7 @@ section {
 }
 
 .navbar .navbar-list{
+	font-size: 0;
 	float: right;
 	margin: 0px;
 	list-style: none; /*Quita el estilo*/
@@ -55,6 +56,8 @@ section {
 .navbar .navbar-list .navbar-item{
 	display: inline-block;
 	background-color: #9B4444;
+	cursor: pointer;
+
 
 }
 
@@ -64,9 +67,11 @@ section {
 	text-decoration: none;
 	font-size: 18px;
 	padding: 15px;
+
 }
 .navbar .navbar-list .navbar-item a:hover{
 	background-color: #B27700;
+
 }
 
 
@@ -75,7 +80,15 @@ section {
 	margin-right: calc(-50vw + 50%);
     margin-left: calc(-50vw + 50%);
 }
+.navbar .navbar-list .navbar-item.active {
+	color: #B27700;
+	background-color: #B27700;
+}
 
+.navbar .navbar-list .navbar-item.active-reverse {
+	color: #B27700;
+	background-color: #B27700;
+}
 /*----------------------*/
 
 /*Who am I--------------*/
@@ -89,17 +102,19 @@ section {
 }
 
 .who .photo-me{
-	max-width: 50%;
+	max-width: 20%;
 	float: left;
 }
 .who .photo-me img{
-	width: 150%;
+	
 	border-radius: 50%;
+	margin-top: 10%;
 	margin-left: 80%;
 
 }
 
 .who .person-info{ 
+	margin-top: 1%;
 	max-width: 50%;
 	float: right;
 }
@@ -135,14 +150,9 @@ section {
 }
 /*------------------------*/
 
-/*About me*/
 hr{
     box-sizing: content-box;
 }
-
-
-/*------------------------*/
-
 
 .gaido-plataforma{
 
@@ -161,9 +171,26 @@ hr{
 	padding: 10px;
 }
 
-.box{
+/*.box{
 	border: 2px solid;
     border-radius: 25px;
+}*/
+
+.big-format{
+	margin-left: 20%;
+	margin-top: 10%;
+	font-size: 24px;
+}
+
+input[type=button], input[type=submit], input[type=reset], button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 40px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 2px;
 }
 /*----------*/
 
@@ -173,6 +200,31 @@ hr{
 	height: 400px;
 	margin-top: 2%;
 	margin-bottom: 2%; 
+}
+/*------*/
+
+/*Animaciones*/
+
+@keyframes mainTitle {
+	0% {
+		font-size: 80px;
+	}
+	20%{
+		font-size: 75px;
+	}
+	40%{
+		font-size: 70px;
+	}
+	60%{
+		font-size: 65px;
+	}
+	80%{
+		font-size: 60px;
+	}
+	100%{
+		font-size: 55px;
+		visibility: visible;
+	}
 }
 /*------*/
 
@@ -186,3 +238,6 @@ hr{
 	padding: 1%;
 }
 /*-------------------------*/
+
+
+
